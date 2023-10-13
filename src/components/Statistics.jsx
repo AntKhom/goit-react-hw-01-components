@@ -1,8 +1,9 @@
-export const Statistics = (statistics) => {
-    return <section class="statistics">
-        {console.log(statistics)}
+export const Statistics = ( statistics ) => {
+    return (<section class="statistics">
+        
         {/* {title && <h2 class="title">{title}</h2>} */}
         <ul class="stat-list">
+            {console.log(statistics)}
             {statistics.map(stat => (
                 <li key={stat.id} class="stat">
                     <span class="label">{stat.label}</span>
@@ -10,5 +11,5 @@ export const Statistics = (statistics) => {
                 </li> 
             ))}
         </ul>
-</section>
+</section>)
 }
