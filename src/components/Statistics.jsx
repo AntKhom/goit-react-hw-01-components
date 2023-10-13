@@ -1,13 +1,12 @@
-export const Statistics = ( statistics ) => {
-    return (<section class="statistics">
-        
-        {/* {title && <h2 class="title">{title}</h2>} */}
-        <ul class="stat-list">
-            {console.log(statistics)}
-            {statistics.map(stat => (
-                <li key={stat.id} class="stat">
-                    <span class="label">{stat.label}</span>
-                    <span class="quantity">{stat.percentage}</span>
+export const Statistics = ({title, stats } ) => {
+    return (<section className="statistics">
+        <h2>2- Секция статистики</h2>
+        {title && <h2 className="title">{title}</h2>}
+        <ul className="stat-list">
+            {stats.map(stat => (
+                <li key={stat.id} className="stat">
+                    <span className="label">{stat.label}</span>
+                    <span className="quantity">{stat.percentage}</span>
                 </li> 
             ))}
         </ul>
