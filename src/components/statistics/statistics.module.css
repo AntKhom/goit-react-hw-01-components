@@ -1,0 +1,39 @@
+.statistics {
+    margin: 0 auto;
+    text-align: center;
+    max-width: 350px;
+}
+
+.title {
+    display: block;
+    padding: 10px 0;
+    background-color: #fff;
+    width: 100%;
+    margin: 0;
+}
+
+.statList {
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+.stat {
+    margin: 0;
+    width: calc(100% / 5);
+    border: 1px solid red;
+    padding: 10px;
+}
+
+.label {
+    display: inline-block;
+    margin-bottom: 10px;
+
+}
+
+.quantity {
+    display: inline-block;
+    width: 100%;
+    font-weight: bold;
+    font-size: 20px;
+}
